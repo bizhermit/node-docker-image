@@ -1,1 +1,12 @@
-# Nodejs with Git Docker Image
+# Node+ Image
+
+**base**
+
+- node:lts-alpine
+
+**addon**
+
+- git
+- tini
+- bash
+- bash-completion
