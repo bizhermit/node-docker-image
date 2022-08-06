@@ -1,4 +1,5 @@
-FROM node:lts-alpine
+FROM node:lts-slim
 
-RUN apk add --no-cache git tini openssh bash bash-completion
-RUN sed -e 's;/bin/ash$;/bin/bash;g' -i /etc/passwd
+RUN apt update && apt install -y git
+
+USER node

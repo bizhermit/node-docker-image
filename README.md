@@ -2,18 +2,14 @@
 
 **base**
 
-- node:lts-alpine
+- node:lts-slim
 
 **addon**
 
 - git
-- tini
-- openssh
-- bash
-- bash-completion
 
 **build**
 
 ```bash
-docker build -t node-dev .
+docker build -t node-dev . --no-cache
 ```
